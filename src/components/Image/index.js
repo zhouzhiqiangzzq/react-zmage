@@ -128,7 +128,7 @@ export default class Images extends React.PureComponent {
             x: 0,
             y: 0,
             opacity: 1,
-            scale: calcFitScale(naturalWidth, naturalHeight, margin),
+            scale: calcFitScale(naturalWidth, naturalHeight, margin, rotate % 180 > 0 ? true : false),
             rotate,
             borderRadius: 10
         }
