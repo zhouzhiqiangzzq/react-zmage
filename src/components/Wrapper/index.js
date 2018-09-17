@@ -47,9 +47,9 @@ export default class Wrapper extends React.PureComponent {
         this.mountSelf()
     }
     componentWillUnmount() {
-        removeListenEventOf('scroll', this.handleScroll)
-	    removeListenEventOf('keydown', this.handleKeyDown)
-        removeListenEventOf('touchmove', this.handleScroll)
+        // removeListenEventOf('scroll', this.handleScroll)
+        // removeListenEventOf('keydown', this.handleKeyDown)
+        // removeListenEventOf('touchmove', this.handleScroll)
     }
 
     /**
@@ -61,9 +61,9 @@ export default class Wrapper extends React.PureComponent {
             // 隐藏封面原图
             cover.style.visibility = 'hidden'
             // 绑定事件
-            addListenEventOf('scroll', this.handleScroll)
-            addListenEventOf('keydown', this.handleKeyDown)
-            addListenEventOf('touchmove', this.handleScroll)
+            // addListenEventOf('scroll', this.handleScroll)
+            // addListenEventOf('keydown', this.handleKeyDown)
+            // addListenEventOf('touchmove', this.handleScroll)
         })
     }
     unmountSelf = () => {

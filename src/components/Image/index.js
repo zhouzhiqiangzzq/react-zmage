@@ -41,7 +41,7 @@ export default class Images extends React.PureComponent {
 	}
 
     componentDidMount() {
-        addListenEventOf('resize', this.handleResize)
+        //addListenEventOf('resize', this.handleResize)
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
         // 更新样式
@@ -60,7 +60,7 @@ export default class Images extends React.PureComponent {
         }
     }
     componentWillUnmount() {
-        removeListenEventOf('resize', this.handleResize)
+        //removeListenEventOf('resize', this.handleResize)
     }
 
     /**
@@ -77,10 +77,10 @@ export default class Images extends React.PureComponent {
     updateZoomEventListenerWithState = () => {
         const { show, zoom } = this.props
         if (show && zoom && !this.listeningMouseMove) {
-            addListenEventOf('mousemove', this.handleMouseMove)
+            //addListenEventOf('mousemove', this.handleMouseMove)
             this.listeningMouseMove = true
         } else {
-            removeListenEventOf('mousemove', this.handleMouseMove)
+            //removeListenEventOf('mousemove', this.handleMouseMove)
             this.listeningMouseMove = false
         }
     }
