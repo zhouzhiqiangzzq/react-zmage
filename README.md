@@ -10,7 +10,7 @@
 
 **当前版本(注意)**
 
-当前版本0.4.2
+当前版本0.4.3
 
 基于作者0.4.0版本源码修改，[源码地址](https://github.com/zhouzhiqiangzzq/react-zmage) ， [作者源码地址](https://github.com/Caldis/react-zmage)
 
