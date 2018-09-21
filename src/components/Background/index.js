@@ -12,7 +12,7 @@ export default ({ show, zoom, backdrop, unmountSelf, toggleZoom }) => {
 	return (
 		<div
 			className={style.backgroundLayer}
-			onClick={zoom ? toggleZoom : unmountSelf}
+			//onClick={zoom ? toggleZoom : unmountSelf}
 			style={{
 				opacity: show ? 1 : 0,
                 background: backdrop || "",
